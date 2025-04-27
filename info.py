@@ -8,9 +8,9 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'ThorAutoFilterbot')
-API_ID = int(environ.get('API_ID', '10671416'))
-API_HASH = environ.get('API_HASH', 'd32e7a9253928d78d7888c0b9998939d')
+SESSION = environ.get('SESSION', 'MovieWorldbot')
+API_ID = int(environ.get('API_ID', '26176503'))
+API_HASH = environ.get('API_HASH', 'fd8e71f5afa5ce9bff097d13293199cf')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
@@ -19,8 +19,8 @@ PICS = (environ.get('PICS', 'https://envs.sh/e4E.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6667067260').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6667067260 1799623305').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6667067260 7476821852').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6667067260 7476821852').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
